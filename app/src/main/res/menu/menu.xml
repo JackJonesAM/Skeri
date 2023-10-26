@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/itemHome"
+        android:title="Home"
+        />
+    <item
+        android:id="@+id/itemCarAvailable"
+        android:title="rthh"/>
+    <item
+        android:id="@+id/itemPrice"
+        android:title="Price"
+         />
+    <item
+        android:id="@+id/itemSchedule"
+        android:title="Schedule"
+        />
+    <item
+        android:id="@+id/itemBookingStatus"
+        android:title="Booking Status"
+         />
+    <item
+        android:id="@+id/itemLogOut"
+        android:title="Log out"
+         />
+    <!-- Add more items as needed -->
+</menu>

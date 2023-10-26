@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Melon">#F4A698</color>
+    <color name="black">#FF000000</color>
+    <color name="cblue">#73A580</color>
+    <color name="coral">#F48668</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="jasper">#DD614A</color>
+    <color name="sage">#C5C392</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Skeri</string>
+    <style name="Base.Theme.Skeri" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Skeri" parent="Base.Theme.Skeri"/>
+</resources>
