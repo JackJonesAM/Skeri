@@ -10,24 +10,58 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/topB"
         android:layout_alignParentTop="true"
         android:background="@color/cblue"
         android:gravity="center">
 
         <ImageView
             android:id="@+id/bar1"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
             android:layout_gravity="center"
-            android:src="@drawable/tlogo" />
-
+            android:contentDescription="@string/todo"
+            android:src="@drawable/tlogo"
+            tools:ignore="ImageContrastCheck" />
     </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="75dp"
+        android:layout_below="@id/topB">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Post Yet"
+            android:textSize="50sp"
+            android:textAlignment="gravity"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginVertical="75dp"
+        android:contentDescription="@android:string/unknownName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/baseline_post_add_24"/>
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/cblue">
+        android:background="@color/cblue"
+        android:id="@+id/bnav">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,21 +72,25 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_weight="1"
-                android:src="@drawable/baseline_menu_24" />
+                android:src="@drawable/baseline_menu_24"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/btnHome"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_weight="1"
-                android:src="@drawable/baseline_home_24" />
+                android:src="@drawable/baseline_home_24"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,HardcodedText" />
 
             <ImageView
                 android:id="@+id/btnMssg"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_weight="1"
-                android:src="@drawable/baseline_message_24" />
+                android:src="@drawable/baseline_message_24"
+                tools:ignore="ContentDescription" />
 
         </LinearLayout>
     </androidx.appcompat.widget.Toolbar>
@@ -62,7 +100,9 @@
         android:layout_height="match_parent"
         android:id="@+id/drawer"
         android:backgroundTint="#156F9E"
-        android:scrollbarSize="20dp">
+        android:scrollbarSize="20dp"
+        android:layout_below="@id/topB"
+        android:layout_marginBottom="75dp">
 
         <com.google.android.material.navigation.NavigationView
             android:layout_width="match_parent"

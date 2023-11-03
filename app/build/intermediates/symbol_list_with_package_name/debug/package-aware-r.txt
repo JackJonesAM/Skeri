@@ -2945,12 +2945,14 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable baseline_account_circle_24
 drawable baseline_add_circle_outline_24
 drawable baseline_home_24
 drawable baseline_lock_24
 drawable baseline_menu_24
 drawable baseline_message_24
 drawable baseline_person_24
+drawable baseline_post_add_24
 drawable baseline_subscriptions_24
 drawable baseline_video_library_24
 drawable baseline_whatshot_24
@@ -3007,6 +3009,7 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
+drawable messages_box
 drawable mtrl_bottomsheet_drag_handle
 drawable mtrl_checkbox_button
 drawable mtrl_checkbox_button_checked_unchecked
@@ -3157,6 +3160,7 @@ id beginOnFirstDraw
 id beginning
 id bestChoice
 id blocking
+id bnav
 id bottom
 id bounce
 id bounceBoth
@@ -3341,6 +3345,7 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
+id meme
 id message
 id middle
 id mini
@@ -3541,6 +3546,7 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id top
+id topB
 id topPanel
 id touch_outside
 id transitionToEnd
@@ -3551,6 +3557,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txtM
+id txtUseN
 id unchecked
 id uniform
 id unlabeled
@@ -3939,6 +3947,7 @@ string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
+string todo
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

@@ -4,11 +4,12 @@
     <color name="black">#FF000000</color>
     <color name="cblue">#73A580</color>
     <color name="coral">#F48668</color>
-    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="ic_launcher_background">#73A480</color>
     <color name="jasper">#DD614A</color>
     <color name="sage">#C5C392</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">Skeri</string>
+    <string name="todo">TODO</string>
     <style name="Base.Theme.Skeri" parent="Theme.Material3.DayNight.NoActionBar">
         
         
