@@ -24,127 +24,150 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <ScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="75dp"
         android:layout_below="@id/topB">
 
-        <RelativeLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center_horizontal"
-            android:padding="24dp"
-            android:id="@+id/meme">
+            android:id="@+id/txtM"
+            android:padding="15dp"
+            android:text="Messages"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/font_fredoka"
+            />
 
-            <TextView
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtM">
+
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtM"
-                android:padding="15dp"
-                android:text="Messages"
-                android:textSize="40sp"/>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="@drawable/messages_box"
-                android:id="@+id/memMsg"
                 android:layout_below="@id/txtM">
 
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/baseline_account_circle_24"
-                    android:layout_margin="5dp"
-                    android:id="@+id/picpci"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentStart="true"
-                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/messages_box"
+                    android:id="@+id/memMsg"
+                    >
+
+                    <ImageView
+                        android:id="@+id/picpci"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/acc_circle"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/picpci"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtUseN"
+                            android:text="Basuh"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"
+                            android:layout_alignParentStart="true"
+                            android:fontFamily="@font/font_fredoka"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txtUseN"
+                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:paddingBottom="5dp"
+                            android:layout_alignParentStart="true"
+                            android:fontFamily="@font/font_fredoka"
+                            />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_toEndOf="@id/picpci"
-                    >
+                    android:layout_height="80dp"
+                    android:background="@drawable/messages_box"
+                    android:id="@+id/memMsg2"
+                    android:layout_below="@id/memMsg">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/txtUseN"
-                        android:text="Basuh"
-                        android:textSize="20dp"
-                        android:layout_marginLeft="5dp"
+                    <ImageView
+                        android:id="@+id/picpci2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="5dp"
-                        android:layout_marginRight="5dp"
-                        android:textStyle="bold"/>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/txtUseN"
-                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
                         android:layout_marginBottom="5dp"
-                        android:paddingBottom="5dp"/>
-                </RelativeLayout>
+                        android:src="@drawable/acc_circle" />
 
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/picpci2"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtUseN2"
+                            android:text="Hasim"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"
+                            android:layout_alignParentStart="true"
+                            android:fontFamily="@font/font_fredoka"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txtUseN2"
+                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:paddingBottom="5dp"
+                            android:layout_alignParentStart="true"
+                            android:fontFamily="@font/font_fredoka"/>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
 
             </RelativeLayout>
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="@drawable/messages_box"
-                android:id="@+id/memMsg2"
-                android:layout_below="@id/memMsg">
+        </ScrollView>
 
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/baseline_account_circle_24"
-                    android:layout_margin="5dp"
-                    android:id="@+id/picpci2"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentStart="true"
-                    />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_toEndOf="@id/picpci2"
-                    >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/txtUseN2"
-                        android:text="Hasim"
-                        android:textSize="20dp"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginRight="5dp"
-                        android:textStyle="bold"/>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/txtUseN2"
-                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:paddingBottom="5dp"/>
-                </RelativeLayout>
-
-
-            </RelativeLayout>
-
-        </RelativeLayout>
-
-    </ScrollView>
+    </RelativeLayout>
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
@@ -175,10 +198,11 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_weight="1"
-                android:src="@drawable/baseline_message_24"/>
+                android:src="@drawable/message_enve"/>
 
         </LinearLayout>
 
     </androidx.appcompat.widget.Toolbar>
+
 
 </RelativeLayout>

@@ -2,12 +2,15 @@ R_DEF: Internal format may change without notice
 local
 color Melon
 color black
+color blck_stroke
 color cblue
 color coral
 color ic_launcher_background
+color idk
 color jasper
 color sage
 color white
+drawable acc_circle
 drawable baseline_account_circle_24
 drawable baseline_add_circle_outline_24
 drawable baseline_home_24
@@ -25,9 +28,12 @@ drawable glogo
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable img_1
+drawable message_enve
 drawable messages_box
 drawable skeri_logo
 drawable tlogo
+drawable write_post
+font font_fredoka
 id GLogo
 id bar1
 id bnav
@@ -44,13 +50,17 @@ id itemPrice
 id itemSchedule
 id loginButton
 id loginText
-id meme
+id memMsg
+id memMsg2
 id open_N
 id password
+id picpci
+id picpci2
 id signupText
 id topB
 id txtM
 id txtUseN
+id txtUseN2
 id username
 layout activity_bottom_navigation
 layout activity_dashboard
@@ -68,5 +78,6 @@ string app_name
 string todo
 style Base.Theme.Skeri
 style Theme.Skeri
+style messages
 xml backup_rules
 xml data_extraction_rules

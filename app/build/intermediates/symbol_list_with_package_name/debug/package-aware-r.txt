@@ -1355,6 +1355,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color blck_stroke
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -1418,6 +1419,7 @@ color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color ic_launcher_background
+color idk
 color jasper
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
@@ -2943,6 +2945,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable acc_circle
 drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_account_circle_24
@@ -3009,6 +3012,7 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
+drawable message_enve
 drawable messages_box
 drawable mtrl_bottomsheet_drag_handle
 drawable mtrl_checkbox_button
@@ -3065,6 +3069,8 @@ drawable test_level_drawable
 drawable tlogo
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable write_post
+font font_fredoka
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3345,7 +3351,8 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
-id meme
+id memMsg
+id memMsg2
 id message
 id middle
 id mini
@@ -3431,6 +3438,8 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id picpci
+id picpci2
 id pin
 id position
 id postLayout
@@ -3559,6 +3568,7 @@ id transition_transform
 id triangle
 id txtM
 id txtUseN
+id txtUseN2
 id unchecked
 id uniform
 id unlabeled
@@ -5065,6 +5075,7 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style messages
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

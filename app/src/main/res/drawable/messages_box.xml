@@ -5,9 +5,8 @@
         android:height="80dp"/>
 
     <stroke
-        android:width="3dp"
-        android:color="@color/Melon"/>
-    <corners
-        android:radius="10dp"/>
-    <solid android:color="@color/jasper"/>
+        android:width="2dp"
+        android:color="@color/blck_stroke" />
+
+    <solid android:color="@color/idk"/>
 </shape>

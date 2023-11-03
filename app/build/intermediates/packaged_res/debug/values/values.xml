@@ -2,9 +2,11 @@
 <resources>
     <color name="Melon">#F4A698</color>
     <color name="black">#FF000000</color>
+    <color name="blck_stroke">#EC9687</color>
     <color name="cblue">#73A580</color>
     <color name="coral">#F48668</color>
     <color name="ic_launcher_background">#73A480</color>
+    <color name="idk">#F69D8D</color>
     <color name="jasper">#DD614A</color>
     <color name="sage">#C5C392</color>
     <color name="white">#FFFFFFFF</color>
@@ -15,4 +17,8 @@
         
     </style>
     <style name="Theme.Skeri" parent="Base.Theme.Skeri"/>
+    <style name="messages">
+        <item name="android:fontFamily">Fredoka</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
 </resources>
