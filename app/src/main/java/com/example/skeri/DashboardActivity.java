@@ -37,7 +37,7 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Replace MessageActivity.class with the target activity class
-                Intent intent = new Intent(DashboardActivity.this, MessageActivity.class);
+                Intent intent = new Intent(DashboardActivity.this, DashboardActivity.class);
                 startActivity(intent);
             }
         });
