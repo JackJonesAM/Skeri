@@ -1362,6 +1362,7 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+color btnPsot
 color button_material_dark
 color button_material_light
 color cardview_dark_background
@@ -1416,6 +1417,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gray
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color ic_launcher_background
@@ -2047,6 +2049,7 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
+color post_box
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -2950,6 +2953,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_account_circle_24
 drawable baseline_add_circle_outline_24
+drawable baseline_arrow_back_24
 drawable baseline_home_24
 drawable baseline_lock_24
 drawable baseline_menu_24
@@ -2964,6 +2968,7 @@ drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
 drawable btn_checkbox_unchecked_to_checked_mtrl_animation
+drawable btn_post
 drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
@@ -3066,6 +3071,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable skeri_logo
 drawable test_level_drawable
+drawable text_post
 drawable tlogo
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3172,6 +3178,8 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id boxiee
+id btnAddpost
 id btnHome
 id btnMenu
 id btnMsg
@@ -3215,6 +3223,7 @@ id currentState
 id custom
 id customPanel
 id cut
+id cv_post
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3243,7 +3252,6 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
-id drawer
 id dropdown_menu
 id easeIn
 id easeInOut
@@ -3325,6 +3333,7 @@ id listMode
 id list_item
 id loginButton
 id loginText
+id logoo
 id m3_side_sheet
 id marquee
 id masked
@@ -3408,7 +3417,6 @@ id notification_main_column_container
 id off
 id on
 id onInterceptTouchReturnSwipe
-id open_N
 id open_search_bar_text_view
 id open_search_view_background
 id open_search_view_clear_button
@@ -3443,6 +3451,7 @@ id picpci2
 id pin
 id position
 id postLayout
+id posting
 id pressed
 id progress_circular
 id progress_horizontal
@@ -3540,6 +3549,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3708,6 +3718,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_bottom_navigation
+layout activity_compose
 layout activity_dashboard
 layout activity_log_in
 layout activity_main

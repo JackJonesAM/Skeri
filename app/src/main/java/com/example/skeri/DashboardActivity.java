@@ -1,19 +1,14 @@
 package com.example.skeri;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 
-import com.google.android.material.navigation.NavigationView;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class DashboardActivity extends AppCompatActivity {
-    DrawerLayout drawer;
-    NavigationView navigationView;
-    ImageView btnHome,btnMenu, btnMssg;
+
+    ImageView btnHome, btnMssg, btnAddpost;
 
 
     @Override
@@ -24,30 +19,23 @@ public class DashboardActivity extends AppCompatActivity {
         // Find the ImageViews by their IDs
         btnHome = findViewById(R.id.btnHome);
         btnMssg = findViewById(R.id.btnMssg);
-        btnMenu = findViewById(R.id.btnMenu);
+        btnAddpost = findViewById(R.id.btnAddpost);
 
-        btnMenu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                drawer.openDrawer(navigationView);
-            }
+
+        btnHome.setOnClickListener(v -> {
+            // Replace MessageActivity.class with the target activity class
+            Intent intent = new Intent(DashboardActivity.this, DashboardActivity.class);
+            startActivity(intent);
         });
 
-        btnHome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Replace MessageActivity.class with the target activity class
-                Intent intent = new Intent(DashboardActivity.this, DashboardActivity.class);
-                startActivity(intent);
-            }
+        btnMssg.setOnClickListener(view -> {
+            Intent intent = new Intent(DashboardActivity.this, MessageActivity.class);
+            startActivity(intent);
         });
 
-        btnMssg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(DashboardActivity.this, MessageActivity.class);
-                startActivity(intent);
-            }
+        btnAddpost.setOnClickListener(v -> {
+            Intent intent = new Intent(DashboardActivity.this, ComposeActivity.class);
+            startActivity(intent);
         });
     }
 }

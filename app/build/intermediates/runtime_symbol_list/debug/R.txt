@@ -1361,6 +1361,7 @@ int color bright_foreground_inverse_material_dark 0x7f050025
 int color bright_foreground_inverse_material_light 0x7f050026
 int color bright_foreground_material_dark 0x7f050027
 int color bright_foreground_material_light 0x7f050028
+int color btnPsot 0x7f0502ef
 int color button_material_dark 0x7f050029
 int color button_material_light 0x7f05002a
 int color cardview_dark_background 0x7f05002b
@@ -1415,6 +1416,7 @@ int color error_color_material_dark 0x7f05005b
 int color error_color_material_light 0x7f05005c
 int color foreground_material_dark 0x7f05005d
 int color foreground_material_light 0x7f05005e
+int color gray 0x7f0502f0
 int color highlighted_text_material_dark 0x7f05005f
 int color highlighted_text_material_light 0x7f050060
 int color ic_launcher_background 0x7f050061
@@ -2046,6 +2048,7 @@ int color mtrl_textinput_focused_box_stroke_color 0x7f0502d1
 int color mtrl_textinput_hovered_box_stroke_color 0x7f0502d2
 int color notification_action_color_filter 0x7f0502d3
 int color notification_icon_bg_color 0x7f0502d4
+int color post_box 0x7f0502f1
 int color primary_dark_material_dark 0x7f0502d5
 int color primary_dark_material_light 0x7f0502d6
 int color primary_material_dark 0x7f0502d7
@@ -2949,6 +2952,7 @@ int drawable avd_hide_password 0x7f070078
 int drawable avd_show_password 0x7f070079
 int drawable baseline_account_circle_24 0x7f0700f0
 int drawable baseline_add_circle_outline_24 0x7f07007a
+int drawable baseline_arrow_back_24 0x7f0700f6
 int drawable baseline_home_24 0x7f07007b
 int drawable baseline_lock_24 0x7f07007c
 int drawable baseline_menu_24 0x7f07007d
@@ -2963,6 +2967,7 @@ int drawable btn_checkbox_checked_mtrl 0x7f070084
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f070085
 int drawable btn_checkbox_unchecked_mtrl 0x7f070086
 int drawable btn_checkbox_unchecked_to_checked_mtrl_animation 0x7f070087
+int drawable btn_post 0x7f0700f7
 int drawable btn_radio_off_mtrl 0x7f070088
 int drawable btn_radio_off_to_on_mtrl_animation 0x7f070089
 int drawable btn_radio_on_mtrl 0x7f07008a
@@ -3065,6 +3070,7 @@ int drawable notification_tile_bg 0x7f0700e7
 int drawable notify_panel_notification_icon_bg 0x7f0700e8
 int drawable skeri_logo 0x7f0700e9
 int drawable test_level_drawable 0x7f0700ea
+int drawable text_post 0x7f0700f8
 int drawable tlogo 0x7f0700ef
 int drawable tooltip_frame_dark 0x7f0700eb
 int drawable tooltip_frame_light 0x7f0700ec
@@ -3171,6 +3177,8 @@ int id bounce 0x7f08005f
 int id bounceBoth 0x7f080060
 int id bounceEnd 0x7f080061
 int id bounceStart 0x7f080062
+int id boxiee 0x7f08020c
+int id btnAddpost 0x7f08020d
 int id btnHome 0x7f080063
 int id btnMenu 0x7f080064
 int id btnMsg 0x7f080065
@@ -3214,6 +3222,7 @@ int id currentState 0x7f080089
 int id custom 0x7f08008a
 int id customPanel 0x7f08008b
 int id cut 0x7f08008c
+int id cv_post 0x7f08020e
 int id date_picker_actions 0x7f08008d
 int id decelerate 0x7f08008e
 int id decelerateAndComplete 0x7f08008f
@@ -3242,7 +3251,6 @@ int id dragLeft 0x7f0800a5
 int id dragRight 0x7f0800a6
 int id dragStart 0x7f0800a7
 int id dragUp 0x7f0800a8
-int id drawer 0x7f0801fa
 int id dropdown_menu 0x7f0800a9
 int id easeIn 0x7f0800aa
 int id easeInOut 0x7f0800ab
@@ -3324,6 +3332,7 @@ int id listMode 0x7f0800f0
 int id list_item 0x7f0800f1
 int id loginButton 0x7f0800f2
 int id loginText 0x7f0800f3
+int id logoo 0x7f08020f
 int id m3_side_sheet 0x7f0800f4
 int id marquee 0x7f0800f5
 int id masked 0x7f0800f6
@@ -3407,7 +3416,6 @@ int id notification_main_column_container 0x7f080141
 int id off 0x7f080142
 int id on 0x7f080143
 int id onInterceptTouchReturnSwipe 0x7f080144
-int id open_N 0x7f080201
 int id open_search_bar_text_view 0x7f080145
 int id open_search_view_background 0x7f080146
 int id open_search_view_clear_button 0x7f080147
@@ -3442,6 +3450,7 @@ int id picpci2 0x7f08020a
 int id pin 0x7f080162
 int id position 0x7f080163
 int id postLayout 0x7f080164
+int id posting 0x7f080210
 int id pressed 0x7f080165
 int id progress_circular 0x7f080166
 int id progress_horizontal 0x7f080167
@@ -3539,6 +3548,7 @@ int id textSpacerNoButtons 0x7f0801c2
 int id textSpacerNoTitle 0x7f0801c3
 int id textStart 0x7f0801c4
 int id textTop 0x7f0801c5
+int id textView 0x7f080211
 int id text_input_end_icon 0x7f0801c6
 int id text_input_error_icon 0x7f0801c7
 int id text_input_start_icon 0x7f0801c8
@@ -3707,6 +3717,7 @@ int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_bottom_navigation 0x7f0b001c
+int layout activity_compose 0x7f0b0070
 int layout activity_dashboard 0x7f0b001d
 int layout activity_log_in 0x7f0b001e
 int layout activity_main 0x7f0b001f
