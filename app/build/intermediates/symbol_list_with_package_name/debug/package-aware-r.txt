@@ -1350,19 +1350,21 @@ color accent_material_dark
 color accent_material_light
 color androidx_core_ripple_material_light
 color androidx_core_secondary_text_default_material_light
+color apricot
+color apricot_2
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
-color blck_stroke
+color boulder
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
-color btnPsot
+color burntsienna
 color button_material_dark
 color button_material_light
 color cardview_dark_background
@@ -1417,11 +1419,10 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
-color gray
+color geraldine
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color ic_launcher_background
-color idk
 color jasper
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
@@ -2049,7 +2050,6 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
-color post_box
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -2060,6 +2060,7 @@ color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
 color ripple_material_dark
 color ripple_material_light
+color rosebud
 color sage
 color secondary_text_default_material_dark
 color secondary_text_default_material_light
@@ -2073,6 +2074,7 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
+color wepeep
 color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
@@ -2954,12 +2956,15 @@ drawable avd_show_password
 drawable baseline_account_circle_24
 drawable baseline_add_circle_outline_24
 drawable baseline_arrow_back_24
+drawable baseline_close_24
 drawable baseline_home_24
 drawable baseline_lock_24
 drawable baseline_menu_24
 drawable baseline_message_24
+drawable baseline_mic_none_24
 drawable baseline_person_24
 drawable baseline_post_add_24
+drawable baseline_send_24
 drawable baseline_subscriptions_24
 drawable baseline_video_library_24
 drawable baseline_whatshot_24
@@ -2973,6 +2978,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable custom_convo
 drawable custom_edittext
 drawable design_fab_background
 drawable design_ic_visibility
@@ -3126,6 +3132,8 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id acclo
+id acclo_card
 id actionDown
 id actionDownUp
 id actionUp
@@ -3159,6 +3167,7 @@ id animateToStart
 id antiClockwise
 id anticipate
 id arc
+id arrow_return
 id asConfigured
 id async
 id auto
@@ -3185,6 +3194,7 @@ id btnMenu
 id btnMsg
 id btnMssg
 id buttonPanel
+id button_return
 id cache_measures
 id callMeasure
 id cancel_button
@@ -3215,6 +3225,7 @@ id content
 id contentPanel
 id contiguous
 id continuousVelocity
+id convo
 id coordinator
 id cos
 id counterclockwise
@@ -3363,6 +3374,7 @@ id matrix
 id memMsg
 id memMsg2
 id message
+id micc
 id middle
 id mini
 id month_grid
@@ -3549,7 +3561,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3719,6 +3730,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_bottom_navigation
 layout activity_compose
+layout activity_conversation
 layout activity_dashboard
 layout activity_log_in
 layout activity_main
@@ -3961,6 +3973,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string post
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
@@ -3968,7 +3981,7 @@ string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
-string todo
+string what_s_your_plant_story
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Skeri</string>
-    <string name="todo">TODO</string>
+    <string name="post">POST</string>
+    <string name="what_s_your_plant_story">what\'s your plant story?</string>
 </resources>

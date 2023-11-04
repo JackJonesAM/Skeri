@@ -1,17 +1,17 @@
 package com.example.skeri;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MessageActivity extends AppCompatActivity {
 
 
-ImageView btnMsg,btnHome,btnMenu;
+    ImageView btnHome;
+    RelativeLayout memMsg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,13 +19,16 @@ ImageView btnMsg,btnHome,btnMenu;
         setContentView(R.layout.activity_message);
 
         btnHome = findViewById(R.id.btnHome);
+        memMsg = findViewById(R.id.memMsg);
 
-        btnHome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MessageActivity.this, DashboardActivity.class);
-                startActivity(intent);
-            }
+        btnHome.setOnClickListener(v -> {
+            Intent intent = new Intent(MessageActivity.this, DashboardActivity.class);
+            startActivity(intent);
+        });
+
+        memMsg.setOnClickListener(v -> {
+            Intent intent = new Intent(MessageActivity.this, ConversationActivity.class);
+            startActivity(intent);
         });
 
 
