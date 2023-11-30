@@ -30,13 +30,15 @@
         android:layout_below="@id/topB">
 
         <TextView
+            android:id="@+id/testest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
             android:text="No Post Yet"
-            android:textSize="50sp"
             android:textAlignment="gravity"
-            tools:ignore="HardcodedText,TextContrastCheck"
-            android:layout_centerInParent="true"/>
+            android:textSize="50sp"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
 
         <ImageView
             android:id="@+id/btnAddpost"

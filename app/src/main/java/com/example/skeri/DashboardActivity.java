@@ -2,13 +2,18 @@ package com.example.skeri;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class DashboardActivity extends AppCompatActivity {
 
     ImageView btnHome, btnMssg, btnAddpost;
+
+    private FirebaseAuth mAuth;
 
 
     @Override
@@ -20,6 +25,9 @@ public class DashboardActivity extends AppCompatActivity {
         btnHome = findViewById(R.id.btnHome);
         btnMssg = findViewById(R.id.btnMssg);
         btnAddpost = findViewById(R.id.btnAddpost);
+
+
+        mAuth = FirebaseAuth.getInstance();
 
 
         btnHome.setOnClickListener(v -> {
@@ -37,5 +45,7 @@ public class DashboardActivity extends AppCompatActivity {
             Intent intent = new Intent(DashboardActivity.this, ComposeActivity.class);
             startActivity(intent);
         });
+
+
     }
 }
