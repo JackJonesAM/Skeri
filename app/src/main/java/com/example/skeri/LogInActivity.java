@@ -1,29 +1,26 @@
     package com.example.skeri;
 
-    import androidx.annotation.NonNull;
-    import androidx.appcompat.app.AppCompatActivity;
     import android.content.Intent;
     import android.os.Bundle;
     import android.util.Patterns;
     import android.view.View;
     import android.widget.Button;
     import android.widget.EditText;
-    import android.widget.ImageView;
     import android.widget.TextView;
     import android.widget.Toast;
+
+    import androidx.annotation.NonNull;
+    import androidx.appcompat.app.AppCompatActivity;
 
     import com.google.android.gms.tasks.OnFailureListener;
     import com.google.android.gms.tasks.OnSuccessListener;
     import com.google.firebase.auth.AuthResult;
     import com.google.firebase.auth.FirebaseAuth;
-    import com.google.firebase.auth.FirebaseUser;
 
     public class LogInActivity extends AppCompatActivity {
 
         private EditText logIn_Email, logIn_Password;
-        private Button loginButton;
-        private TextView signUpRedirect;
-        private FirebaseAuth auth;
+        private FirebaseAuth mAuth;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -31,10 +28,10 @@
 
             logIn_Email = findViewById(R.id.logIn_Email);
             logIn_Password = findViewById(R.id.logIn_Password);
-            loginButton = findViewById(R.id.loginButton);
-            signUpRedirect = findViewById(R.id.signUpRedirect);
+            Button loginButton = findViewById(R.id.loginButton);
+            TextView signUpRedirect = findViewById(R.id.signUpRedirect);
 
-            auth = FirebaseAuth.getInstance();
+            mAuth = FirebaseAuth.getInstance();
 
 
 
@@ -45,7 +42,7 @@
                     String pass = logIn_Password.getText().toString();
                     if (!email.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
                         if (!pass.isEmpty()) {
-                            auth.signInWithEmailAndPassword(email, pass).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                            mAuth.signInWithEmailAndPassword(email, pass).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                                 @Override
                                 public void onSuccess(AuthResult authResult) {
                                     Toast.makeText(LogInActivity.this, "Login Successful",
@@ -80,20 +77,6 @@
             });
 
 
-            @Override
-            public void onStart() {
-                super.onStart();
-                // Check if user is signed in (non-null) and update UI accordingly.
-                FirebaseUser currentUser = mAuth.getCurrentUser();
-                updateUI(currentUser);
-            }
-
-            private void updateUI(FirebaseUser user) {
-                // Your implementation of updateUI
-                // This is where you handle UI updates based on the user's authentication status
-                // For example, you might navigate to a different activity or show relevant information.
-                // Make sure to implement this method according to your app's logic.
-            }
-
         }
+
     }

@@ -103,19 +103,35 @@
 
         </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:text="Don't have an account? Sign Up Now!"
-            android:textSize="18sp"
-            android:textAlignment="center"
-            android:id="@+id/signUpRedirect"
-            android:textColor="@color/black"
-            android:layout_marginBottom="20dp"
-            android:layout_below="@id/boxiee"
-            android:layout_centerHorizontal="true"
-            />
+            android:layout_below="@+id/boxiee"
+            android:layout_marginStart="70dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:text="Don't have account?"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signUpRedirect"
+                android:textSize="15sp"
+                android:textColor="@color/jasper"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Sign Up Now"/>
+
+        </LinearLayout>
+        
+
 
     </RelativeLayout>
 

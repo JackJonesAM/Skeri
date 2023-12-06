@@ -2,18 +2,24 @@ package com.example.skeri;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class DashboardActivity extends AppCompatActivity {
 
     ImageView btnHome, btnMssg, btnAddpost;
 
+    Button logOut;
+
     private FirebaseAuth mAuth;
+
 
 
     @Override
@@ -25,7 +31,7 @@ public class DashboardActivity extends AppCompatActivity {
         btnHome = findViewById(R.id.btnHome);
         btnMssg = findViewById(R.id.btnMssg);
         btnAddpost = findViewById(R.id.btnAddpost);
-
+        logOut = findViewById(R.id.logOut_btn);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -45,7 +51,22 @@ public class DashboardActivity extends AppCompatActivity {
             Intent intent = new Intent(DashboardActivity.this, ComposeActivity.class);
             startActivity(intent);
         });
-
+        logOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                signOut();
+            }
+        });
 
     }
+    private void signOut() {
+
+        mAuth.signOut();
+        // Redirect to the login screen or any other appropriate activity
+        Intent intent = new Intent(DashboardActivity.this, LogInActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish(); // Close the current activity to prevent going back to it
+    }
+
 }

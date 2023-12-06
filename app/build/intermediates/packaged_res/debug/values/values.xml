@@ -16,7 +16,13 @@
     <color name="wepeep">#F6D9D9</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">Skeri</string>
+    <string name="gcm_defaultSenderId" translatable="false">826362491461</string>
+    <string name="google_api_key" translatable="false">AIzaSyB647aosyExehbiLjfN8wckJGKEGqpVzII</string>
+    <string name="google_app_id" translatable="false">1:826362491461:android:f211b920fcd94614a1e92c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB647aosyExehbiLjfN8wckJGKEGqpVzII</string>
+    <string name="google_storage_bucket" translatable="false">skeri-5f114.appspot.com</string>
     <string name="post">POST</string>
+    <string name="project_id" translatable="false">skeri-5f114</string>
     <string name="what_s_your_plant_story">what\'s your plant story?</string>
     <style name="Base.Theme.Skeri" parent="Theme.Material3.DayNight.NoActionBar">
         
